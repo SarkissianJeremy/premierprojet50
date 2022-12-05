@@ -9,14 +9,14 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PremierController extends AbstractController
 {
-    #[Route('/premier', name: 'app_premier')]
-    public function index(): JsonResponse
-    {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/PremierController.php',
-        ]);
-    }
+   // #[Route('/premier', name: 'app_premier')]
+//    public function index(): JsonResponse
+//    {
+//        return $this->json([
+//            'message' => 'Welcome to your new controller!',
+//            'path' => 'src/Controller/PremierController.php',
+//        ]);
+//    }
     
     #[Route('/message', name: 'message')]
     public function message(): Response

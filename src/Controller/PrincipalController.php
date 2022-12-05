@@ -13,13 +13,13 @@ use App\Entity\Lieu;
 
 class PrincipalController extends AbstractController
 {
-    #[Route('/principal', name: 'app_principal')]
-    public function index(): Response
-    {
-        return $this->render('principal/index.html.twig', [
-            'controller_name' => "Symfony c'est super",
-        ]);
-    }
+//    #[Route('/principal', name: 'app_principal')]
+//    public function index(): Response
+//    {
+//        return $this->render('principal/index.html.twig', [
+//            'controller_name' => "Symfony c'est super",
+//        ]);
+//    }
     
     #[Route('/welcome/{nom}', name: 'welcome')]
     public function welcome(string $nom)
